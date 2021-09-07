@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cstdlib>
+#include <math.h>
+#include <cmaath>
+using namespace std;
+
+int main()
+{
+    for
+    srand(time(NULL) );
+    cout<<"Losowanie"<< rand
+
+    return 0;
+}
