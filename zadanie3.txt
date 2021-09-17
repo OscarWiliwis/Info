@@ -3,22 +3,22 @@ using namespace std;
 
 int main()
 {
-	int tab[10][10], x, y;
+	int tab[10][10], o, w;
 
 
-	for (int x = 0; x < 10; x++)
+	for (int o = 0; o < 10; o++)
 
-		for (int y = 0; x < 10; y++)
+		for (int w = 0; w < 10; w++)
 		{
-			if (x == y)
+			if (o == w)
 			{
-				tab[x][y] = 1;
+				tab[o][w] = 1;
 			}
 			else
 			{
-				tab[x][y] = 0;
+				tab[o][w] = 0;
 			}
-			cout << tab[x][y] << " ";
+			cout << tab[o][w] << " ";
 		}
 	cout << endl;
 }
@@ -27,6 +27,8 @@ cout << endl;
 
 return 0;
 }
+
+//Oscar Wiliwis 1P
 
 
 	
