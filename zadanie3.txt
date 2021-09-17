@@ -28,7 +28,7 @@ cout << endl;
 return 0;
 }
 
-//Oscar Wiliwis 1P
+//Oscar Wiliwis 2P
 
 
 	
