@@ -1,25 +1,25 @@
 #include <iostream>
 #include <stdlib.h>
+#include <cmath>
+#include <math.h>
 using namespace std;
 
 int main()
 {
-	int tab[2][2];
-	int i;
-	int j;
+	int tab[2][2],o , w;
 
-	for (int i = 0; i < 2; i++) {
+	for (int o = 0; o < 2; o++) {
 
-		for (int j = 0; j < 2; j++) {
-			cin >> tab[i][j];
+		for (int w = 0; w < 2; w++) {
+			cin >> tab[o][w];
 		}
 	}
 
-		for (int i = 0; i < 2; i++) {
+		for (int o = 0; o < 2; o++) {
 
-			for (int j = 0; j < 2; j++) {
+			for (int w = 0; w < 2; w++) {
 
-				cout << tab[i][j] << " ";
+				cout << tab[o][w] << " ";
 
 			}
 			cout << endl;
@@ -27,3 +27,5 @@ int main()
 
 	
 	}
+
+// Oscar Wiliwis 2P
