@@ -1,26 +1,33 @@
 #include <iostream>
 #include <stdlib.h>
+#include <cmath>
+#include <math.h>
+#
+
 using namespace std;
 
 int main()
 {
+//Deklarowanie stałych 
+
 	int tab[2][2];
-	int wynik;
-	int j;
+        int wynik;
+        int o;
+	int w;
+// pętla
+	for (int o = 0; o < 2; o++) {
 
-	for (int i = 0; i < 2; i++) {
-
-		for (int j = 0; j < 2; j++) {
-			cin >> tab[i][j];
+		for (int w = 0; w < 2; w++) {
+			cin >> tab[o][w];
 		}
 	}
 
-	for (int i = 0; i < 2; i++) {
+	for (int o = 0; o < 2; o++) {
 
-		for (int j = 0; j < 2; j++) {
+		for (int w = 0; w < 2; w++) {
 
-			cout << tab[i][j] << " ";
-
+			cout << tab[o][w] << " ";
+//koniec pętli
 		}
 		cout << endl;
 	}
@@ -28,3 +35,5 @@ int main()
 	wynik = tab[0][0] * tab[1][1] - (tab[0][1] * tab[1][0]);
 	cout << wynik;
 }
+
+// Oscar Wiliwis 2P
