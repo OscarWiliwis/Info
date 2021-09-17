@@ -5,9 +5,10 @@
 using namespace std;
 
 int main()
+// deklarowanie stałych
 {
 	int tab[2][2],o , w;
-
+// pętla
 	for (int o = 0; o < 2; o++) {
 
 		for (int w = 0; w < 2; w++) {
@@ -20,7 +21,7 @@ int main()
 			for (int w = 0; w < 2; w++) {
 
 				cout << tab[o][w] << " ";
-
+// koniec pętli
 			}
 			cout << endl;
 		}
