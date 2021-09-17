@@ -3,9 +3,10 @@ using namespace std;
 
 int main()
 {
+// deklarowanie stałych
 	int tab[10][10], o, w;
 
-
+// pętla
 	for (int o = 0; o < 10; o++)
 
 		for (int w = 0; w < 10; w++)
@@ -19,6 +20,7 @@ int main()
 				tab[o][w] = 0;
 			}
 			cout << tab[o][w] << " ";
+//koniec pętli
 		}
 	cout << endl;
 }
