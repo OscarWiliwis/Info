@@ -43,7 +43,7 @@ void romb() {
     cout << wpisz * wpisz1 << endl;
 }
 void trojkat() {
-    cout << "Wpisz aby obliczyć obwód trójkąta prostokątnego" << endl;
+    cout << "Wpisz aby obliczyć obwód trójkąta " << endl;
     cin >> wpisz >> wpisz1 >> wpisz2;
     cout << wpisz + wpisz1 + wpisz2 << endl;
     
