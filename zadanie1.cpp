@@ -1,4 +1,6 @@
-﻿#include <iostream>
+//21.09.20212
+
+#include <iostream>
 using namespace std;
 
 int wpisz, wpisz1, wpisz2;
