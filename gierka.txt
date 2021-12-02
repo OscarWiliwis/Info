@@ -1,0 +1,283 @@
+//----------------------------------------------------BIBLIOTECZKI-------------------------------------//		
+
+using namespace std;
+#include <iostream>
+#include <ctime>
+#include <locale.h>
+
+int wyborskila, los;
+
+struct Klasa
+{
+    int HP;
+    int LVL;
+    int DMG;
+    int INTE;
+    string name;
+};
+struct Enemy
+{
+    int HP;
+    int DMG;
+    int INTE;
+    string name;
+    int LVL;
+    int frostball() {
+        string nazwa = "Frostball";
+        DMG = 5 * (INTE);
+        return DMG;
+    }
+};
+//------------------------------------------------------------------------SKILLE---------------------------------------------------------------//
+int kop(int n, int m) {
+    string nazwa = "Kop";
+    n = 3 * (m);
+    return n;
+}
+int łokieć(int n, int m) {
+    string nazwa = "łokieć";
+    n = 6 * (m);
+    return n;
+}
+int uderzenie(int n, int m) {
+    string nazwa = "Uderzenie";
+    n = m / 4.5;
+    return n;
+}
+int płetwa(int n, int m) {
+    string nazwa = "atak z płetwyć";
+    n = 4 * (m);
+    return n;
+}
+int jad(int n, int m) {
+    string nazwa = "atak jadem";
+    n = 6 * (m);
+    return n;
+}
+
+int main()
+{
+    setlocale(LC_CTYPE, "Polish");
+
+    srand(time(NULL));
+    Enemy wrogowie[10];
+    Klasa postacie[10];
+    //---------------------------------------------------------------------BOHATEROWIE------------------------------------------------------//
+    postacie[0].HP = 100;
+    postacie[0].INTE = 3;
+    postacie[0].DMG = 25;
+    postacie[0].LVL = 1;
+    postacie[0].name = "Szaman";
+
+    postacie[1].HP = 100;
+    postacie[1].INTE = 3;
+    postacie[1].DMG = 25;
+    postacie[1].LVL = 1;
+    postacie[1].name = "Rycerz";
+
+    postacie[2].HP = 100;
+    postacie[2].INTE = 3;
+    postacie[2].DMG = 25;
+    postacie[2].LVL = 1;
+    postacie[2].name = "Barbarzynca";
+
+    postacie[3].HP = 100;
+    postacie[3].INTE = 3;
+    postacie[3].DMG = 25;
+    postacie[3].LVL = 1;
+    postacie[3].name = "Łucznik";
+
+    postacie[4].HP = 100;
+    postacie[4].INTE = 3;
+    postacie[4].DMG = 25;
+    postacie[4].LVL = 1;
+    postacie[4].name = "Magik";
+
+    postacie[5].HP = 100;
+    postacie[5].INTE = 3;
+    postacie[5].DMG = 25;
+    postacie[5].LVL = 1;
+    postacie[5].name = "Ninja";
+
+    postacie[6].HP = 100;
+    postacie[6].INTE = 3;
+    postacie[6].DMG = 25;
+    postacie[6].LVL = 1;
+    postacie[6].name = "Ksiezniczka";
+
+    postacie[7].HP = 100;
+    postacie[7].INTE = 3;
+    postacie[7].DMG = 25;
+    postacie[7].LVL = 1;
+    postacie[7].name = "Mysliwy";
+
+    postacie[8].HP = 100;
+    postacie[8].INTE = 3;
+    postacie[8].DMG = 25;
+    postacie[8].LVL = 1;
+    postacie[8].name = "Mnich";
+
+    postacie[9].HP = 100;
+    postacie[9].INTE = 3;
+    postacie[9].DMG = 25;
+    postacie[9].LVL = 1;
+    postacie[9].name = "Ork";
+    //---------------------------------------------------------------------WROGOWIE----------------------------------------------------------//
+    1
+
+    wrogowie[0].HP = 50;
+    wrogowie[0].INTE = 3;
+    wrogowie[0].DMG = 10;
+    wrogowie[0].LVL = 1;
+    wrogowie[0].name = "wilk";
+
+    wrogowie[1].HP = 50;
+    wrogowie[1].INTE = 3;
+    wrogowie[1].DMG = 10;
+    wrogowie[1].LVL = 1;
+    wrogowie[1].name = "anakonda";
+
+    wrogowie[2].HP = 50;
+    wrogowie[2].INTE = 3;
+    wrogowie[2].DMG = 10;
+    wrogowie[2].LVL = 1;
+    wrogowie[2].name = "panda";
+
+    wrogowie[3].HP = 80;
+    wrogowie[3].INTE = 3;
+    wrogowie[3].DMG = 10;
+    wrogowie[3].LVL = 50;
+    wrogowie[3].name = "Baran";
+
+    wrogowie[4].HP = 120;
+    wrogowie[4].INTE = 50;
+    wrogowie[4].DMG = 50;
+    wrogowie[4].LVL = 50;
+    wrogowie[4].name = "Zombie";
+
+    wrogowie[5].HP = 50;
+    wrogowie[5].INTE = 50;
+    wrogowie[5].DMG = 50;
+    wrogowie[5].LVL = 50;
+    wrogowie[5].name = "nietoperz";
+
+    wrogowie[6].HP = 20;
+    wrogowie[6].INTE = 50;
+    wrogowie[6].DMG = 50;
+    wrogowie[6].LVL = 50;
+    wrogowie[6].name = "Szkilet wdowy";
+
+    wrogowie[7].HP = 50;
+    wrogowie[7].INTE = 50;
+    wrogowie[7].DMG = 50;
+    wrogowie[7].LVL = 50;
+    wrogowie[7].name = "Karaś";
+
+    wrogowie[8].HP = 50;
+    wrogowie[8].INTE = 50;
+    wrogowie[8].DMG = 50;
+    wrogowie[8].LVL = 50;
+    wrogowie[8].name = "Małpa";
+
+    wrogowie[9].HP = 50;
+    wrogowie[9].INTE = 50;
+    wrogowie[9].DMG = 50;
+    wrogowie[9].LVL = 50;
+    wrogowie[9].name = "Barzant";
+
+    cout << "Wpisz 1 aby wybrać Szamana" << endl;
+    cout << "Wpisz 2 aby wybrać Rycerz" << endl;
+    cout << "Wpisz 3 aby wybrać Barbarzynca" << endl;
+    cout << "Wpisz 4 aby wybrać Łucznik" << endl;
+    cout << "Wpisz 5 aby wybrać Magik" << endl;
+    cout << "Wpisz 6 aby wybrać Ninja" << endl;
+    cout << "Wpisz 7 aby wybrać Ksiezniczka" << endl;
+    cout << "Wpisz 8 aby wybrać Myśliwy" << endl;
+    cout << "Wpisz 9 aby wybrać Mnich" << endl;
+    cout << "Wpisz 10 aby wybrać Ork" << endl;
+
+    int wybor;
+    cin >> wybor;
+
+    switch (wybor)
+    {
+    case 1:
+        cout << postacie[0].name << endl;
+        break;
+    case 2:
+        cout << postacie[1].name << endl;
+        break;
+    case 3:
+        cout << postacie[2].name << endl;
+        break;
+    case 4:
+        cout << postacie[3].name << endl;
+        break;
+    case 5:
+        cout << postacie[4].name << endl;
+        break;
+    case 6:
+        cout << postacie[5].name << endl;
+        break;
+    case 7:
+        cout << postacie[6].name << endl;
+        break;
+    case 8:
+        cout << postacie[7].name << endl;
+        break;
+    case 9:
+        cout << postacie[8].name << endl;
+        break;
+    case 10:
+        cout << postacie[9].name << endl;
+        break;
+    }
+
+
+    for (int i = 0; i < 6; i++) {
+
+
+
+
+        int hp_enemy = wrogowie[0].HP;
+        int hp_postacie = postacie[0].HP;
+        while (postacie[0].HP >= 1 && hp_enemy >= 1) {
+            cout << "Wpisz 1 aby uderzyć 2 aby kopnać 3 zeby walnać z łokcia" << endl;
+            int wybor2;
+            int odejmowanie;
+
+            cin >> wybor2;
+            switch (wybor2) {
+            case 1:
+                cout << "Zadajesz " << uderzenie(postacie[0].DMG, postacie[0].HP) << endl;
+                hp_postacie = hp_postacie - płetwa(wrogowie[0].DMG, wrogowie[0].INTE);
+                cout << "Zosatło ci " << hp_postacie << endl;
+                cout << "Przeciwnik zadaje ci" << płetwa(wrogowie[0].DMG, wrogowie[0].INTE) << endl;
+                hp_enemy = hp_enemy - uderzenie(postacie[0].DMG, postacie[0].HP);
+                cout << "Wrogowi zostało " << hp_enemy << endl;
+                break;
+            case 2:
+                cout << "Zadajesz" << uderzenie(postacie[0].DMG, postacie[0].HP) << endl;
+                hp_postacie = hp_postacie - płetwa(wrogowie[0].DMG, wrogowie[0].INTE);
+                cout << "Zosatło ci " << hp_postacie << endl;
+                cout << "Przeciwnik zadaje ci" << płetwa(wrogowie[0].DMG, wrogowie[0].INTE) << endl;
+                hp_enemy = hp_enemy - uderzenie(postacie[0].DMG, postacie[0].HP);
+                cout << "Wrogowi zostało " << hp_enemy << endl;
+                break;
+            case 3:
+                cout << "Zadajesz" << uderzenie(postacie[0].DMG, postacie[0].HP) << endl;
+                hp_postacie = hp_postacie - płetwa(wrogowie[0].DMG, wrogowie[0].INTE);
+                cout << "Zosatło ci " << hp_postacie << endl;
+                cout << "Przeciwnik zadaje ci" << jad(wrogowie[0].DMG, wrogowie[0].INTE) << endl;
+                hp_enemy = hp_enemy - uderzenie(postacie[0].DMG, postacie[0].HP);
+                cout << "Wrogowi zostało " << hp_enemy << endl;
+
+                break;
+            }
+
+        }
+        system("cls");
+    }
+
+
+}
